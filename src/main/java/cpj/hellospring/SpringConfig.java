@@ -1,5 +1,6 @@
 package cpj.hellospring;
 
+import cpj.hellospring.aop.TimeTraceAop;
 import cpj.hellospring.repository.JpaMemberRepository;
 import cpj.hellospring.repository.MemberRepository;
 import cpj.hellospring.service.MemberService;
@@ -32,6 +33,9 @@ public class SpringConfig {
 //        this.em = em;
 //    }
 
+    /*
+    * Spring Data JPA를 사용할 때 사용.
+    * */
     private final MemberRepository memberRepository;
 
     @Autowired
